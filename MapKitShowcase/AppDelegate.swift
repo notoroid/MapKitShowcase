@@ -22,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         locationManager.requestWhenInUseAuthorization()
         
-
-        
         return true
     }
 

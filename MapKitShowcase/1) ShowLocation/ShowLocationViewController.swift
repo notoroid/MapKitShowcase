@@ -24,6 +24,8 @@ class ShowLocationViewController: UIViewController {
             
             mapView.setRegion(region, animated: true)
         }
+        
+        mapView.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {

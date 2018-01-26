@@ -43,7 +43,6 @@ class MenuViewController: UITableViewController {
         case "showLocationSegue":
             guard let vc = segue.destination as? ShowLocationViewController else { return }
             vc.coordinateForInitialized = placePickerCoordinate
-            vc.mapView.showsUserLocation = true
         case "placePickerSegue":
             guard let nc = segue.destination as? UINavigationController else { return }
             guard let psvc = nc.topViewController as? PlaceSelectViewController else { return }
