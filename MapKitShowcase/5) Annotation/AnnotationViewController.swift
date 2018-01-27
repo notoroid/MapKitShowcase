@@ -35,8 +35,6 @@ class AnnotationViewController: UIViewController {
         self.mapView.addAnnotations(annotations)
         self.mapView.showAnnotations(self.mapView.annotations, animated: false)
     }
-
-    
 }
 
 extension AnnotationViewController : MKMapViewDelegate
@@ -68,6 +66,9 @@ extension AnnotationViewController : MKMapViewDelegate
                     mannov.glyphText = sanno.type.glyphText()
                     mannov.markerTintColor = sanno.type.tintColor()
                     mannov.clusteringIdentifier = "shop"
+                    
+                    
+                    
                     annov = mannov
                 } else {
                     annov?.annotation = sanno

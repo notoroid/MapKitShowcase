@@ -19,6 +19,8 @@
 		875BDA13201B2F690044E67A /* ConpassAndScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */; };
 		878776B9201B4083009D585D /* UserLocationTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */; };
 		87C3BC29201C3F7300A7EDFA /* ShowcaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */; };
+		87C3BC2B201C42A200A7EDFA /* SimpleAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */; };
+		87C3BC2D201C45C000A7EDFA /* SimpleShopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC2C201C45C000A7EDFA /* SimpleShopAnnotationView.swift */; };
 		87F7BAA3201B421A00A41200 /* PlaceSelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F7BAA2201B421900A41200 /* PlaceSelectViewController.storyboard */; };
 		87F7BAA5201B46A200A41200 /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */; };
 		87F7BAA8201B4B6600A41200 /* CompanyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */; };
@@ -40,6 +42,8 @@
 		875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConpassAndScaleViewController.swift; sourceTree = "<group>"; };
 		878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTrackingViewController.swift; sourceTree = "<group>"; };
 		87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseViewModel.swift; sourceTree = "<group>"; };
+		87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnnotationViewController.swift; sourceTree = "<group>"; };
+		87C3BC2C201C45C000A7EDFA /* SimpleShopAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleShopAnnotationView.swift; sourceTree = "<group>"; };
 		87F7BAA2201B421900A41200 /* PlaceSelectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaceSelectViewController.storyboard; sourceTree = "<group>"; };
 		87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationViewController.swift; sourceTree = "<group>"; };
 		87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAnnotation.swift; sourceTree = "<group>"; };
@@ -138,10 +142,12 @@
 		87F7BAA6201B478200A41200 /* 5) Annotation */ = {
 			isa = PBXGroup;
 			children = (
+				87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */,
 				87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */,
 				87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */,
 				87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */,
 				87F7BAA9201B558700A41200 /* ShopAnnotation.swift */,
+				87C3BC2C201C45C000A7EDFA /* SimpleShopAnnotationView.swift */,
 			);
 			path = "5) Annotation";
 			sourceTree = "<group>";
@@ -231,10 +237,12 @@
 				875BDA0B201B0E440044E67A /* MenuViewController.swift in Sources */,
 				875BDA0D201B1B110044E67A /* WaitingViewController.swift in Sources */,
 				87F7BAA5201B46A200A41200 /* AnnotationViewController.swift in Sources */,
+				87C3BC2B201C42A200A7EDFA /* SimpleAnnotationViewController.swift in Sources */,
 				875BDA08201B0CC80044E67A /* PlaceSelectViewController.swift in Sources */,
 				878776B9201B4083009D585D /* UserLocationTrackingViewController.swift in Sources */,
 				875BDA13201B2F690044E67A /* ConpassAndScaleViewController.swift in Sources */,
 				875BD9F0201ADDCA0044E67A /* AppDelegate.swift in Sources */,
+				87C3BC2D201C45C000A7EDFA /* SimpleShopAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
