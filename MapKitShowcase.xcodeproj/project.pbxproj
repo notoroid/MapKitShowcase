@@ -18,6 +18,7 @@
 		875BDA10201B24A80044E67A /* ShowLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BDA0F201B24A80044E67A /* ShowLocationViewController.swift */; };
 		875BDA13201B2F690044E67A /* ConpassAndScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */; };
 		878776B9201B4083009D585D /* UserLocationTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */; };
+		87C3BC29201C3F7300A7EDFA /* ShowcaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */; };
 		87F7BAA3201B421A00A41200 /* PlaceSelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F7BAA2201B421900A41200 /* PlaceSelectViewController.storyboard */; };
 		87F7BAA5201B46A200A41200 /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */; };
 		87F7BAA8201B4B6600A41200 /* CompanyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */; };
@@ -38,6 +39,7 @@
 		875BDA0F201B24A80044E67A /* ShowLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocationViewController.swift; sourceTree = "<group>"; };
 		875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConpassAndScaleViewController.swift; sourceTree = "<group>"; };
 		878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTrackingViewController.swift; sourceTree = "<group>"; };
+		87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseViewModel.swift; sourceTree = "<group>"; };
 		87F7BAA2201B421900A41200 /* PlaceSelectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaceSelectViewController.storyboard; sourceTree = "<group>"; };
 		87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationViewController.swift; sourceTree = "<group>"; };
 		87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAnnotation.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */,
+				87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */,
 				87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */,
 				87F7BAA9201B558700A41200 /* ShopAnnotation.swift */,
 			);
@@ -223,6 +226,7 @@
 			files = (
 				875BDA10201B24A80044E67A /* ShowLocationViewController.swift in Sources */,
 				87F7BAA8201B4B6600A41200 /* CompanyAnnotation.swift in Sources */,
+				87C3BC29201C3F7300A7EDFA /* ShowcaseViewModel.swift in Sources */,
 				87F7BAAA201B558700A41200 /* ShopAnnotation.swift in Sources */,
 				875BDA0B201B0E440044E67A /* MenuViewController.swift in Sources */,
 				875BDA0D201B1B110044E67A /* WaitingViewController.swift in Sources */,

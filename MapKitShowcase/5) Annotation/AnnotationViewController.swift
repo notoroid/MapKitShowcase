@@ -11,30 +11,23 @@ import MapKit
 
 class AnnotationViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    
-    private let centerCordinate = CLLocationCoordinate2DMake(43.064506, 141.362703)
-    private let shopAnnotations = [ShopAnnotation(.freshnessburger),
-                                   ShopAnnotation(.seikarou),
-                                   ShopAnnotation(.tullyscoffee),
-                                   ShopAnnotation(.seveneleven),
-                                   ShopAnnotation(.lotteria),
-                                   ShopAnnotation(.dipperdan),
-                                   ShopAnnotation(.kfc),]
+
+    private let viewModel = ShowcaseViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let region = MKCoordinateRegionMakeWithDistance(centerCordinate, 1400, 1400)
+        let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, 1400, 1400)
         
         mapView.setRegion(region, animated: true)
         
-        let ca = CompanyAnnotation()
+        let ca = viewModel.companyAnnotation
         ca.coordinate = CLLocationCoordinate2DMake(43.064506, 141.362703)
         
 
         var annotations = [MKPointAnnotation]()
         annotations.append(ca)
-        shopAnnotations.forEach { (sanno) in
+        viewModel.shopAnnotations.forEach { (sanno) in
             annotations.append(sanno)
         }
         
