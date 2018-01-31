@@ -309,6 +309,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iY7-nb-bcT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3E4-MX-oeA">
+                        <barButtonItem key="rightBarButtonItem" title="表示リセット" id="scC-zE-U8U">
+                            <connections>
+                                <action selector="onUpdateRegion:" destination="nKg-zE-pfI" id="aEX-u2-dOW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="FF6-Yh-ZWU" id="1To-u3-uXS"/>
                     </connections>

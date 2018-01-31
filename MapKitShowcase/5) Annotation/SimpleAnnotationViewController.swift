@@ -35,10 +35,47 @@ class SimpleAnnotationViewController: UIViewController {
         self.mapView.addAnnotations(annotations)
         self.mapView.showAnnotations(self.mapView.annotations, animated: false)
     }
+    
+    @IBAction func onUpdateRegion(_ sender: Any) {
+        let ca = viewModel.companyAnnotation
+
+        self.mapView.setCenter(ca.coordinate, animated: true)
+        
+    }
+    
+    
 }
 
 extension SimpleAnnotationViewController : MKMapViewDelegate
 {
+    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        print("mapView: regionWillChangeAnimated")
+    }
+ 
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        print("mapView: regionDidChangeAnimated")
+    }
+    
+//    func mapViewWillStartLoadingMap(_ mapView: MKMapView) {
+//        print("mapViewWillStartLoadingMap")
+//    }
+//    
+//    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+//        print("mapViewDidFinishLoadingMap")
+//    }
+//    
+//    func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: Error) {
+//        print("mapViewDidFailLoadingMap")
+//    }
+//    
+//    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
+//        print("mapViewWillStartRenderingMap")
+//    }
+//    
+//    func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool) {
+//        print("mapViewDidFinishRenderingMap")
+//    }
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
