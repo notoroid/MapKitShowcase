@@ -24,7 +24,7 @@ class MultitouchMonitorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, 1400, 1400)
+        let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, viewModel.defaultRadius, viewModel.defaultRadius)
         
         mapView.setRegion(region, animated: true)
         

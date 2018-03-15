@@ -20,4 +20,6 @@ struct ShowcaseViewModel
                            ShopAnnotation(.lotteria),
                            ShopAnnotation(.dipperdan),
                            ShopAnnotation(.kfc),]
+    
+    let defaultRadius = CLLocationDistance(1400)
 }

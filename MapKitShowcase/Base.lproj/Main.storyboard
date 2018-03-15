@@ -114,12 +114,32 @@
                                             <segue destination="uIf-Ud-He6" kind="show" id="5lg-eA-4Ga"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="HoS-HY-Fua" style="IBUITableViewCellStyleDefault" id="nVv-UH-fSJ">
+                                        <rect key="frame" x="0.0" y="271.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nVv-UH-fSJ" id="zGO-Ju-PGQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ジェスチャ以外で地図操作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HoS-HY-Fua">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lYF-67-Y5j" kind="show" id="lrJ-nD-Uzc"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="iOS11 以降に追加された機能" id="54X-Q1-Xi5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="QG6-iM-aLO" style="IBUITableViewCellStyleDefault" id="b2S-ge-IkP">
-                                        <rect key="frame" x="0.0" y="327.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="371.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b2S-ge-IkP" id="Req-5W-zd4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -139,7 +159,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="1Ke-d3-dWg" style="IBUITableViewCellStyleDefault" id="x4O-4N-Jsb">
-                                        <rect key="frame" x="0.0" y="371.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="415.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x4O-4N-Jsb" id="hht-ur-S1h">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -159,7 +179,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wBJ-xr-eBb" style="IBUITableViewCellStyleDefault" id="r4f-tD-emf">
-                                        <rect key="frame" x="0.0" y="415.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="459.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r4f-tD-emf" id="3pG-q2-wWn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -516,6 +536,73 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2624.8000000000002" y="707.49625187406298"/>
+        </scene>
+        <!--Custom User Interface View Controller-->
+        <scene sceneID="kMz-LL-o7k">
+            <objects>
+                <viewController id="lYF-67-Y5j" customClass="CustomUserInterfaceViewController" customModule="MapKitShowcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aw9-cf-ljF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QTO-4d-e2f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeB-N2-Mbz">
+                                <rect key="frame" x="327" y="108" width="32" height="450"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlT-uV-afC">
+                                        <rect key="frame" x="-0.5" y="199" width="32" height="51"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="Ckc-eb-d1s"/>
+                                            <constraint firstAttribute="width" constant="32" id="tfi-wK-OsQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="zU5-h7-PMp" appends="YES" id="MMF-6G-Lda"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GlT-uV-afC" firstAttribute="centerY" secondItem="BeB-N2-Mbz" secondAttribute="centerY" id="aIC-RQ-bjB"/>
+                                    <constraint firstItem="GlT-uV-afC" firstAttribute="centerX" secondItem="BeB-N2-Mbz" secondAttribute="centerX" id="fTw-Vo-vds"/>
+                                    <constraint firstAttribute="width" constant="32" id="ltr-9A-95v"/>
+                                    <constraint firstAttribute="height" constant="450" id="s2N-Bn-gOt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ftz-cb-SSI" firstAttribute="trailing" secondItem="BeB-N2-Mbz" secondAttribute="trailing" constant="16" id="0EB-Y7-d4j"/>
+                            <constraint firstItem="BeB-N2-Mbz" firstAttribute="centerY" secondItem="Aw9-cf-ljF" secondAttribute="centerY" id="iOn-Aq-CLm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ftz-cb-SSI"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zU5-h7-PMp" appends="YES" id="gF1-aV-2vQ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="QTO-4d-e2f" id="2jz-Za-Ixn"/>
+                        <outlet property="mapZoomGesture" destination="zU5-h7-PMp" id="jrC-f4-hfr"/>
+                        <outlet property="zoomSliderBackgroundHeightConstraint" destination="s2N-Bn-gOt" id="cZJ-gp-brF"/>
+                        <outlet property="zoomSliderBackgroundView" destination="BeB-N2-Mbz" id="No4-cL-LxW"/>
+                        <outlet property="zoomSliderCenterYConstraint" destination="aIC-RQ-bjB" id="avk-Hi-tO6"/>
+                        <outlet property="zoomSliderHeightConstraint" destination="Ckc-eb-d1s" id="Kog-HC-SLa"/>
+                        <outlet property="zoomSliderView" destination="GlT-uV-afC" id="hMV-Uf-zGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3R-Ww-Orr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zU5-h7-PMp">
+                    <connections>
+                        <action selector="onMapZoom:" destination="lYF-67-Y5j" id="Zsm-FG-h1V"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2625" y="1572"/>
         </scene>
     </scenes>
 </document>

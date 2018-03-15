@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8755B9B2205A9BFB007949E7 /* CustomUserInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */; };
 		875BD9F0201ADDCA0044E67A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BD9EF201ADDCA0044E67A /* AppDelegate.swift */; };
 		875BD9F5201ADDCA0044E67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875BD9F3201ADDCA0044E67A /* Main.storyboard */; };
 		875BD9F7201ADDCA0044E67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875BD9F6201ADDCA0044E67A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserInterfaceViewController.swift; sourceTree = "<group>"; };
 		875BD9EC201ADDCA0044E67A /* MapKitShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875BD9EF201ADDCA0044E67A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875BD9F4201ADDCA0044E67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8755B9B0205A9BC3007949E7 /* 6) Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */,
+			);
+			path = "6) Applications";
+			sourceTree = "<group>";
+		};
 		875BD9E3201ADDCA0044E67A = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				875BDA14201B2F730044E67A /* 3) Conpass and Scale */,
 				875BDA17201B3F6A0044E67A /* 4) User location tracking */,
 				87F7BAA6201B478200A41200 /* 5) Annotation */,
+				8755B9B0205A9BC3007949E7 /* 6) Applications */,
 				875BD9F6201ADDCA0044E67A /* Assets.xcassets */,
 				875BD9F8201ADDCA0044E67A /* LaunchScreen.storyboard */,
 				875BD9FB201ADDCA0044E67A /* Info.plist */,
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8755B9B2205A9BFB007949E7 /* CustomUserInterfaceViewController.swift in Sources */,
 				875BDA10201B24A80044E67A /* ShowLocationViewController.swift in Sources */,
 				87F7BAA8201B4B6600A41200 /* CompanyAnnotation.swift in Sources */,
 				87C3BC29201C3F7300A7EDFA /* ShowcaseViewModel.swift in Sources */,
