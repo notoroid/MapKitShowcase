@@ -15,6 +15,7 @@ class MultitouchMonitorViewController: UIViewController {
     @IBOutlet var pinchGestureRecognizer: UIPinchGestureRecognizer!
     @IBOutlet var rotationGestureRecognizer: UIRotationGestureRecognizer!
     @IBOutlet var panGestureRecongnizer: UIPanGestureRecognizer!
+    @IBOutlet weak var enterMapViewGestureLabel: UILabel!
     
     private let viewModel = ShowcaseViewModel()
     
@@ -49,13 +50,6 @@ class MultitouchMonitorViewController: UIViewController {
         }
     }
     
-    @IBAction func onUpdateAnnotation(_ sender: Any) {
-        
-        
-        
-        
-    }
-    
 }
 
 extension MultitouchMonitorViewController : UIGestureRecognizerDelegate
@@ -63,6 +57,8 @@ extension MultitouchMonitorViewController : UIGestureRecognizerDelegate
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         print("gestureRecognizerShouldBegin:")
         enterMapViewGesture = true
+        enterMapViewGestureLabel.isHidden = false
+        
         return false
     }
 }
@@ -76,6 +72,7 @@ extension MultitouchMonitorViewController : MKMapViewDelegate
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         print("mapView: regionDidChangeAnimated")
         enterMapViewGesture = false
+        enterMapViewGestureLabel.isHidden = true
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

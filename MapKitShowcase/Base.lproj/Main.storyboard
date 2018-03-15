@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -444,35 +443,55 @@
                                     <outletCollection property="gestureRecognizers" destination="cEE-F9-yLh" appends="YES" id="kNd-Ll-PHN"/>
                                 </connections>
                             </mapView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flk-5g-8Xz">
+                                <rect key="frame" x="16" y="108" width="343" height="48"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="操作中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZh-On-VqJ">
+                                        <rect key="frame" x="145.5" y="13.5" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ACn-sx-d6x"/>
+                                    <constraint firstItem="bZh-On-VqJ" firstAttribute="centerX" secondItem="flk-5g-8Xz" secondAttribute="centerX" id="FSV-6F-SJH"/>
+                                    <constraint firstItem="bZh-On-VqJ" firstAttribute="centerX" secondItem="flk-5g-8Xz" secondAttribute="centerX" id="Kjq-vv-AIQ"/>
+                                    <constraint firstItem="bZh-On-VqJ" firstAttribute="centerY" secondItem="flk-5g-8Xz" secondAttribute="centerY" id="aI4-51-QjC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SeE-wd-7nb" firstAttribute="trailing" secondItem="3Tf-yK-Wrg" secondAttribute="trailing" id="5Ji-sw-hkt"/>
                             <constraint firstItem="JKC-z2-r40" firstAttribute="trailing" secondItem="3Tf-yK-Wrg" secondAttribute="trailing" id="EMp-EU-jN5"/>
                             <constraint firstItem="SeE-wd-7nb" firstAttribute="top" secondItem="slG-7X-ESG" secondAttribute="top" id="FCT-Wb-0Hf"/>
+                            <constraint firstItem="flk-5g-8Xz" firstAttribute="leading" secondItem="3Tf-yK-Wrg" secondAttribute="leading" constant="16" id="NPT-Ja-0nX"/>
                             <constraint firstItem="SeE-wd-7nb" firstAttribute="bottom" secondItem="3Tf-yK-Wrg" secondAttribute="bottom" id="PSe-xA-aN4"/>
                             <constraint firstItem="SeE-wd-7nb" firstAttribute="leading" secondItem="3Tf-yK-Wrg" secondAttribute="leading" id="ZJg-Hu-t3i"/>
+                            <constraint firstItem="3Tf-yK-Wrg" firstAttribute="trailing" secondItem="flk-5g-8Xz" secondAttribute="trailing" constant="16" id="aUk-Ch-cRi"/>
                             <constraint firstItem="JKC-z2-r40" firstAttribute="leading" secondItem="3Tf-yK-Wrg" secondAttribute="leading" id="cZP-bD-o0B"/>
+                            <constraint firstItem="flk-5g-8Xz" firstAttribute="top" secondItem="3Tf-yK-Wrg" secondAttribute="top" constant="44" id="gLK-C6-zCH"/>
                             <constraint firstItem="JKC-z2-r40" firstAttribute="bottom" secondItem="3Tf-yK-Wrg" secondAttribute="bottom" id="kj6-0p-kre"/>
                             <constraint firstItem="JKC-z2-r40" firstAttribute="top" secondItem="slG-7X-ESG" secondAttribute="top" id="qUM-hs-rJN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Tf-yK-Wrg"/>
                     </view>
                     <navigationItem key="navigationItem" id="M5x-5g-mc5">
-                        <rightBarButtonItems>
-                            <barButtonItem title="位置更新" id="jel-CE-LpI">
-                                <connections>
-                                    <action selector="onUpdateAnnotation:" destination="uIf-Ud-He6" id="oTj-aH-tSB"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="中央移動" id="e7y-Qe-VE6">
-                                <connections>
-                                    <action selector="onUpdateRegion:" destination="uIf-Ud-He6" id="2HK-TF-W54"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="中央移動" id="e7y-Qe-VE6">
+                            <connections>
+                                <action selector="onUpdateRegion:" destination="uIf-Ud-He6" id="2HK-TF-W54"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="enterMapViewGestureLabel" destination="bZh-On-VqJ" id="yff-gP-ODr"/>
                         <outlet property="mapView" destination="SeE-wd-7nb" id="EQf-fd-SUW"/>
                         <outlet property="panGestureRecongnizer" destination="cEE-F9-yLh" id="FMZ-Lf-ESD"/>
                         <outlet property="pinchGestureRecognizer" destination="51b-Lc-RGb" id="lfb-s3-mfW"/>
