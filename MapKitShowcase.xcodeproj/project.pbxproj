@@ -69,6 +69,7 @@
 		8755B9B0205A9BC3007949E7 /* 6) Applications */ = {
 			isa = PBXGroup;
 			children = (
+				8768A18E20222F7D00BFAA82 /* MultitouchMonitorViewController.swift */,
 				8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */,
 			);
 			path = "6) Applications";
@@ -161,7 +162,6 @@
 				87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */,
 				87F7BAA9201B558700A41200 /* ShopAnnotation.swift */,
 				87C3BC2C201C45C000A7EDFA /* SimpleShopAnnotationView.swift */,
-				8768A18E20222F7D00BFAA82 /* MultitouchMonitorViewController.swift */,
 			);
 			path = "5) Annotation";
 			sourceTree = "<group>";
