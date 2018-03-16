@@ -11,8 +11,11 @@ import MapKit
 
 class ConpassAndScaleViewController: UIViewController {
     public var coordinateForInitialized:CLLocationCoordinate2D? = nil
+    
     @IBOutlet public weak var mapView: MKMapView!
 
+    private let viewModel = ShowcaseViewModel()
+    
     enum PickerComponent : Int {
         case Conpass = 0
         case Scale = 1
@@ -28,7 +31,7 @@ class ConpassAndScaleViewController: UIViewController {
         if let coordinateForInitialized = coordinateForInitialized {
             let coordinate = coordinateForInitialized
             
-            let region = MKCoordinateRegionMakeWithDistance(coordinate, 1400, 1400)
+            let region = MKCoordinateRegionMakeWithDistance(coordinate, viewModel.defaultRadius, viewModel.defaultRadius)
             
             mapView.setRegion(region, animated: true)
         }

@@ -25,7 +25,6 @@ class RegionAndCameraViewController: UIViewController {
         
         self.navigationController?.isToolbarHidden = false
         
-        
         let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, viewModel.defaultRadius, viewModel.defaultRadius)
         mapView.setRegion(region, animated: true)
         
