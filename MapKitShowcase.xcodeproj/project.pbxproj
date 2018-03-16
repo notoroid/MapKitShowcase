@@ -112,6 +112,7 @@
 				875BD9F3201ADDCA0044E67A /* Main.storyboard */,
 				875BDA0A201B0E440044E67A /* MenuViewController.swift */,
 				875BDA0C201B1B110044E67A /* WaitingViewController.swift */,
+				87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */,
 				875BDA11201B2E630044E67A /* 1) ShowLocation */,
 				875BDA0E201B238F0044E67A /* 2) PlacePicker */,
 				875BDA14201B2F730044E67A /* 3) Conpass and Scale */,
@@ -172,7 +173,6 @@
 			children = (
 				87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */,
 				87F7BAA4201B46A200A41200 /* AnnotationViewController.swift */,
-				87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */,
 				87F7BAA7201B4B6600A41200 /* CompanyAnnotation.swift */,
 				87F7BAA9201B558700A41200 /* ShopAnnotation.swift */,
 				87C3BC2C201C45C000A7EDFA /* SimpleShopAnnotationView.swift */,
