@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871B2B61205BBD8100DE369E /* OverlaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871B2B60205BBD8100DE369E /* OverlaysViewController.swift */; };
 		8755B9B2205A9BFB007949E7 /* CustomUserInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */; };
 		875BD9F0201ADDCA0044E67A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BD9EF201ADDCA0044E67A /* AppDelegate.swift */; };
 		875BD9F5201ADDCA0044E67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875BD9F3201ADDCA0044E67A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		875BDA10201B24A80044E67A /* ShowLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BDA0F201B24A80044E67A /* ShowLocationViewController.swift */; };
 		875BDA13201B2F690044E67A /* ConpassAndScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */; };
 		8768A18F20222F7D00BFAA82 /* MultitouchMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768A18E20222F7D00BFAA82 /* MultitouchMonitorViewController.swift */; };
+		87787ACF205BFBB500AA2FAA /* CompanyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ACE205BFBB500AA2FAA /* CompanyCircle.swift */; };
 		878776B9201B4083009D585D /* UserLocationTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */; };
 		87C3BC29201C3F7300A7EDFA /* ShowcaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */; };
 		87C3BC2B201C42A200A7EDFA /* SimpleAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */; };
@@ -30,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		871B2B60205BBD8100DE369E /* OverlaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaysViewController.swift; sourceTree = "<group>"; };
 		8755B9B1205A9BFB007949E7 /* CustomUserInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserInterfaceViewController.swift; sourceTree = "<group>"; };
 		875BD9EC201ADDCA0044E67A /* MapKitShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875BD9EF201ADDCA0044E67A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		875BDA0F201B24A80044E67A /* ShowLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocationViewController.swift; sourceTree = "<group>"; };
 		875BDA12201B2F690044E67A /* ConpassAndScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConpassAndScaleViewController.swift; sourceTree = "<group>"; };
 		8768A18E20222F7D00BFAA82 /* MultitouchMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitouchMonitorViewController.swift; sourceTree = "<group>"; };
+		87787ACE205BFBB500AA2FAA /* CompanyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCircle.swift; sourceTree = "<group>"; };
 		878776B8201B4082009D585D /* UserLocationTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTrackingViewController.swift; sourceTree = "<group>"; };
 		87C3BC28201C3F7300A7EDFA /* ShowcaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseViewModel.swift; sourceTree = "<group>"; };
 		87C3BC2A201C42A200A7EDFA /* SimpleAnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnnotationViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		871B2B5F205BBD7500DE369E /* 7) Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				871B2B60205BBD8100DE369E /* OverlaysViewController.swift */,
+				87787ACE205BFBB500AA2FAA /* CompanyCircle.swift */,
+			);
+			path = "7) Overlays";
+			sourceTree = "<group>";
+		};
 		8755B9B0205A9BC3007949E7 /* 6) Applications */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 				875BDA17201B3F6A0044E67A /* 4) User location tracking */,
 				87F7BAA6201B478200A41200 /* 5) Annotation */,
 				8755B9B0205A9BC3007949E7 /* 6) Applications */,
+				871B2B5F205BBD7500DE369E /* 7) Overlays */,
 				875BD9F6201ADDCA0044E67A /* Assets.xcassets */,
 				875BD9F8201ADDCA0044E67A /* LaunchScreen.storyboard */,
 				875BD9FB201ADDCA0044E67A /* Info.plist */,
@@ -255,8 +269,10 @@
 				87C3BC2B201C42A200A7EDFA /* SimpleAnnotationViewController.swift in Sources */,
 				875BDA08201B0CC80044E67A /* PlaceSelectViewController.swift in Sources */,
 				878776B9201B4083009D585D /* UserLocationTrackingViewController.swift in Sources */,
+				871B2B61205BBD8100DE369E /* OverlaysViewController.swift in Sources */,
 				875BDA13201B2F690044E67A /* ConpassAndScaleViewController.swift in Sources */,
 				8768A18F20222F7D00BFAA82 /* MultitouchMonitorViewController.swift in Sources */,
+				87787ACF205BFBB500AA2FAA /* CompanyCircle.swift in Sources */,
 				875BD9F0201ADDCA0044E67A /* AppDelegate.swift in Sources */,
 				87C3BC2D201C45C000A7EDFA /* SimpleShopAnnotationView.swift in Sources */,
 			);
