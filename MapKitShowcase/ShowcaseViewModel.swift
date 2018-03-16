@@ -22,5 +22,5 @@ struct ShowcaseViewModel
                            ShopAnnotation(.kfc),]
     
     let companyCoordinate = CLLocationCoordinate2DMake(43.064506, 141.362703)
-    let defaultRadius = CLLocationDistance(1400)
+    let defaultRadius = CLLocationDistance(50)
 }

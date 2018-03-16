@@ -19,7 +19,6 @@ class OverlaysViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet var segmentedControl: UISegmentedControl!
     
-    
     private let viewModel = ShowcaseViewModel()
     
     override func viewDidLoad() {
@@ -29,7 +28,7 @@ class OverlaysViewController: UIViewController {
         self.navigationController?.isToolbarHidden = false
         
         
-        let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, 1400, 1400)
+        let region = MKCoordinateRegionMakeWithDistance(viewModel.centerCordinate, viewModel.defaultRadius, viewModel.defaultRadius)
         
         mapView.setRegion(region, animated: true)
         
@@ -42,7 +41,7 @@ class OverlaysViewController: UIViewController {
             annotations.append(sanno)
         }
         
-        // アノテーションのセットアプ
+        // アノテーションのセットアップ
         self.mapView.removeAnnotations(self.mapView.annotations)
         self.mapView.addAnnotations(annotations)
         self.mapView.showAnnotations(self.mapView.annotations, animated: false)
@@ -101,7 +100,6 @@ extension OverlaysViewController  : MKMapViewDelegate
         
         return renderer
     }
-    
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
